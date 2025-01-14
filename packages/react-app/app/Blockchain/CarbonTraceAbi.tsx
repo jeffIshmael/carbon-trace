@@ -1,4 +1,4 @@
-export const contractAddress = "0x0E7ae45bB8CC7f649fDeaefa54E5356a6C25c3B7";
+export const contractAddress = "0xf3d6baed2187e5bccd6e68a6e24aabcbdc06ff3c";
 
 export const contractAbi =  [
   {
@@ -226,18 +226,6 @@ export const contractAbi =  [
       },
       {
         "indexed": false,
-        "internalType": "string",
-        "name": "email",
-        "type": "string"
-      },
-      {
-        "indexed": false,
-        "internalType": "uint256",
-        "name": "phoneNo",
-        "type": "uint256"
-      },
-      {
-        "indexed": false,
         "internalType": "uint256[]",
         "name": "carbonIds",
         "type": "uint256[]"
@@ -288,43 +276,6 @@ export const contractAbi =  [
       },
       {
         "indexed": false,
-        "internalType": "address",
-        "name": "offsetterAdd",
-        "type": "address"
-      },
-      {
-        "indexed": false,
-        "internalType": "uint256",
-        "name": "amount",
-        "type": "uint256"
-      },
-      {
-        "indexed": false,
-        "internalType": "uint256",
-        "name": "proposalId",
-        "type": "uint256"
-      },
-      {
-        "indexed": false,
-        "internalType": "string",
-        "name": "ipfsHash",
-        "type": "string"
-      }
-    ],
-    "name": "offsetProposalApproved",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": false,
-        "internalType": "uint256",
-        "name": "proposalId",
-        "type": "uint256"
-      },
-      {
-        "indexed": false,
         "internalType": "string",
         "name": "category",
         "type": "string"
@@ -337,100 +288,9 @@ export const contractAbi =  [
       },
       {
         "indexed": false,
-        "internalType": "uint256",
-        "name": "estAmount",
-        "type": "uint256"
-      },
-      {
-        "indexed": false,
-        "internalType": "uint256",
-        "name": "timestamp",
-        "type": "uint256"
-      },
-      {
-        "indexed": false,
-        "internalType": "string",
-        "name": "ipfsHash",
-        "type": "string"
-      },
-      {
-        "indexed": false,
         "internalType": "address",
         "name": "offsetterAdd",
         "type": "address"
-      },
-      {
-        "indexed": false,
-        "internalType": "bool",
-        "name": "approved",
-        "type": "bool"
-      },
-      {
-        "indexed": false,
-        "internalType": "address[]",
-        "name": "votedvals",
-        "type": "address[]"
-      }
-    ],
-    "name": "offsetProposalCreated",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": false,
-        "internalType": "uint256",
-        "name": "offsetterId",
-        "type": "uint256"
-      },
-      {
-        "indexed": false,
-        "internalType": "string",
-        "name": "compName",
-        "type": "string"
-      },
-      {
-        "indexed": false,
-        "internalType": "uint256",
-        "name": "regPin",
-        "type": "uint256"
-      },
-      {
-        "indexed": false,
-        "internalType": "string",
-        "name": "category",
-        "type": "string"
-      },
-      {
-        "indexed": false,
-        "internalType": "string",
-        "name": "offSetCat",
-        "type": "string"
-      },
-      {
-        "indexed": false,
-        "internalType": "string",
-        "name": "description",
-        "type": "string"
-      },
-      {
-        "indexed": false,
-        "internalType": "address",
-        "name": "offsetterAdd",
-        "type": "address"
-      },
-      {
-        "indexed": false,
-        "internalType": "string",
-        "name": "email",
-        "type": "string"
-      },
-      {
-        "indexed": false,
-        "internalType": "uint256",
-        "name": "phoneNo",
-        "type": "uint256"
       },
       {
         "indexed": false,
@@ -568,21 +428,8 @@ export const contractAbi =  [
   {
     "inputs": [
       {
-        "internalType": "uint256",
-        "name": "_proposalId",
-        "type": "uint256"
-      }
-    ],
-    "name": "approveOffsetProposal",
-    "outputs": [],
-    "stateMutability": "payable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
         "internalType": "address",
-        "name": "_client",
+        "name": "account",
         "type": "address"
       }
     ],
@@ -683,42 +530,6 @@ export const contractAbi =  [
         "internalType": "address",
         "name": "buyerAdd",
         "type": "address"
-      },
-      {
-        "internalType": "string",
-        "name": "email",
-        "type": "string"
-      },
-      {
-        "internalType": "uint256",
-        "name": "phoneNo",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "cUSDToken",
-    "outputs": [
-      {
-        "internalType": "contract IERC20",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "contractBalance",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
       }
     ],
     "stateMutability": "view",
@@ -732,76 +543,6 @@ export const contractAbi =  [
         "internalType": "uint8",
         "name": "",
         "type": "uint8"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "getApprovedProposals",
-    "outputs": [
-      {
-        "components": [
-          {
-            "internalType": "uint256",
-            "name": "proposalId",
-            "type": "uint256"
-          },
-          {
-            "internalType": "string",
-            "name": "category",
-            "type": "string"
-          },
-          {
-            "internalType": "string",
-            "name": "description",
-            "type": "string"
-          },
-          {
-            "internalType": "uint256",
-            "name": "estAmount",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "timestamp",
-            "type": "uint256"
-          },
-          {
-            "internalType": "string",
-            "name": "ipfsHash",
-            "type": "string"
-          },
-          {
-            "internalType": "address",
-            "name": "offsetterAdd",
-            "type": "address"
-          },
-          {
-            "internalType": "uint256",
-            "name": "yesVotes",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "noVotes",
-            "type": "uint256"
-          },
-          {
-            "internalType": "bool",
-            "name": "approved",
-            "type": "bool"
-          },
-          {
-            "internalType": "address[]",
-            "name": "votedvals",
-            "type": "address[]"
-          }
-        ],
-        "internalType": "struct CarbonTrace.offsetProposal[]",
-        "name": "",
-        "type": "tuple[]"
       }
     ],
     "stateMutability": "view",
@@ -848,16 +589,6 @@ export const contractAbi =  [
             "internalType": "address",
             "name": "buyerAdd",
             "type": "address"
-          },
-          {
-            "internalType": "string",
-            "name": "email",
-            "type": "string"
-          },
-          {
-            "internalType": "uint256",
-            "name": "phoneNo",
-            "type": "uint256"
           },
           {
             "internalType": "uint256[]",
@@ -908,16 +639,6 @@ export const contractAbi =  [
             "internalType": "address",
             "name": "buyerAdd",
             "type": "address"
-          },
-          {
-            "internalType": "string",
-            "name": "email",
-            "type": "string"
-          },
-          {
-            "internalType": "uint256",
-            "name": "phoneNo",
-            "type": "uint256"
           },
           {
             "internalType": "uint256[]",
@@ -990,152 +711,6 @@ export const contractAbi =  [
   {
     "inputs": [
       {
-        "internalType": "uint256",
-        "name": "_proposalId",
-        "type": "uint256"
-      }
-    ],
-    "name": "getOffsetProposal",
-    "outputs": [
-      {
-        "components": [
-          {
-            "internalType": "uint256",
-            "name": "proposalId",
-            "type": "uint256"
-          },
-          {
-            "internalType": "string",
-            "name": "category",
-            "type": "string"
-          },
-          {
-            "internalType": "string",
-            "name": "description",
-            "type": "string"
-          },
-          {
-            "internalType": "uint256",
-            "name": "estAmount",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "timestamp",
-            "type": "uint256"
-          },
-          {
-            "internalType": "string",
-            "name": "ipfsHash",
-            "type": "string"
-          },
-          {
-            "internalType": "address",
-            "name": "offsetterAdd",
-            "type": "address"
-          },
-          {
-            "internalType": "uint256",
-            "name": "yesVotes",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "noVotes",
-            "type": "uint256"
-          },
-          {
-            "internalType": "bool",
-            "name": "approved",
-            "type": "bool"
-          },
-          {
-            "internalType": "address[]",
-            "name": "votedvals",
-            "type": "address[]"
-          }
-        ],
-        "internalType": "struct CarbonTrace.offsetProposal",
-        "name": "",
-        "type": "tuple"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "getOffsetProposals",
-    "outputs": [
-      {
-        "components": [
-          {
-            "internalType": "uint256",
-            "name": "proposalId",
-            "type": "uint256"
-          },
-          {
-            "internalType": "string",
-            "name": "category",
-            "type": "string"
-          },
-          {
-            "internalType": "string",
-            "name": "description",
-            "type": "string"
-          },
-          {
-            "internalType": "uint256",
-            "name": "estAmount",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "timestamp",
-            "type": "uint256"
-          },
-          {
-            "internalType": "string",
-            "name": "ipfsHash",
-            "type": "string"
-          },
-          {
-            "internalType": "address",
-            "name": "offsetterAdd",
-            "type": "address"
-          },
-          {
-            "internalType": "uint256",
-            "name": "yesVotes",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "noVotes",
-            "type": "uint256"
-          },
-          {
-            "internalType": "bool",
-            "name": "approved",
-            "type": "bool"
-          },
-          {
-            "internalType": "address[]",
-            "name": "votedvals",
-            "type": "address[]"
-          }
-        ],
-        "internalType": "struct CarbonTrace.offsetProposal[]",
-        "name": "",
-        "type": "tuple[]"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
         "internalType": "address",
         "name": "_myaddress",
         "type": "address"
@@ -1167,11 +742,6 @@ export const contractAbi =  [
           },
           {
             "internalType": "string",
-            "name": "offSetCat",
-            "type": "string"
-          },
-          {
-            "internalType": "string",
             "name": "description",
             "type": "string"
           },
@@ -1179,16 +749,6 @@ export const contractAbi =  [
             "internalType": "address",
             "name": "offsetterAdd",
             "type": "address"
-          },
-          {
-            "internalType": "string",
-            "name": "email",
-            "type": "string"
-          },
-          {
-            "internalType": "uint256",
-            "name": "phoneNo",
-            "type": "uint256"
           },
           {
             "internalType": "uint256[]",
@@ -1232,11 +792,6 @@ export const contractAbi =  [
           },
           {
             "internalType": "string",
-            "name": "offSetCat",
-            "type": "string"
-          },
-          {
-            "internalType": "string",
             "name": "description",
             "type": "string"
           },
@@ -1244,16 +799,6 @@ export const contractAbi =  [
             "internalType": "address",
             "name": "offsetterAdd",
             "type": "address"
-          },
-          {
-            "internalType": "string",
-            "name": "email",
-            "type": "string"
-          },
-          {
-            "internalType": "uint256",
-            "name": "phoneNo",
-            "type": "uint256"
           },
           {
             "internalType": "uint256[]",
@@ -1264,82 +809,6 @@ export const contractAbi =  [
         "internalType": "struct CarbonTrace.Offsetter[]",
         "name": "",
         "type": "tuple[]"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "_myadd",
-        "type": "address"
-      }
-    ],
-    "name": "getProposal",
-    "outputs": [
-      {
-        "components": [
-          {
-            "internalType": "uint256",
-            "name": "proposalId",
-            "type": "uint256"
-          },
-          {
-            "internalType": "string",
-            "name": "category",
-            "type": "string"
-          },
-          {
-            "internalType": "string",
-            "name": "description",
-            "type": "string"
-          },
-          {
-            "internalType": "uint256",
-            "name": "estAmount",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "timestamp",
-            "type": "uint256"
-          },
-          {
-            "internalType": "string",
-            "name": "ipfsHash",
-            "type": "string"
-          },
-          {
-            "internalType": "address",
-            "name": "offsetterAdd",
-            "type": "address"
-          },
-          {
-            "internalType": "uint256",
-            "name": "yesVotes",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "noVotes",
-            "type": "uint256"
-          },
-          {
-            "internalType": "bool",
-            "name": "approved",
-            "type": "bool"
-          },
-          {
-            "internalType": "address[]",
-            "name": "votedvals",
-            "type": "address[]"
-          }
-        ],
-        "internalType": "struct CarbonTrace.offsetProposal",
-        "name": "",
-        "type": "tuple"
       }
     ],
     "stateMutability": "view",
@@ -1412,11 +881,6 @@ export const contractAbi =  [
             "internalType": "address",
             "name": "validatorAdd",
             "type": "address"
-          },
-          {
-            "internalType": "uint256[]",
-            "name": "proposalIds",
-            "type": "uint256[]"
           }
         ],
         "internalType": "struct CarbonTrace.validator",
@@ -1425,34 +889,6 @@ export const contractAbi =  [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "string",
-        "name": "_category",
-        "type": "string"
-      },
-      {
-        "internalType": "string",
-        "name": "_description",
-        "type": "string"
-      },
-      {
-        "internalType": "string",
-        "name": "_ipfs",
-        "type": "string"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_estAmount",
-        "type": "uint256"
-      }
-    ],
-    "name": "makeOffsetProposal",
-    "outputs": [],
-    "stateMutability": "nonpayable",
     "type": "function"
   },
   {
@@ -1497,82 +933,6 @@ export const contractAbi =  [
     "type": "function"
   },
   {
-    "inputs": [
-      {
-        "internalType": "uint256[]",
-        "name": "_offsetIds",
-        "type": "uint256[]"
-      }
-    ],
-    "name": "myOffsets",
-    "outputs": [
-      {
-        "components": [
-          {
-            "internalType": "uint256",
-            "name": "proposalId",
-            "type": "uint256"
-          },
-          {
-            "internalType": "string",
-            "name": "category",
-            "type": "string"
-          },
-          {
-            "internalType": "string",
-            "name": "description",
-            "type": "string"
-          },
-          {
-            "internalType": "uint256",
-            "name": "estAmount",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "timestamp",
-            "type": "uint256"
-          },
-          {
-            "internalType": "string",
-            "name": "ipfsHash",
-            "type": "string"
-          },
-          {
-            "internalType": "address",
-            "name": "offsetterAdd",
-            "type": "address"
-          },
-          {
-            "internalType": "uint256",
-            "name": "yesVotes",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "noVotes",
-            "type": "uint256"
-          },
-          {
-            "internalType": "bool",
-            "name": "approved",
-            "type": "bool"
-          },
-          {
-            "internalType": "address[]",
-            "name": "votedvals",
-            "type": "address[]"
-          }
-        ],
-        "internalType": "struct CarbonTrace.offsetProposal[]",
-        "name": "",
-        "type": "tuple[]"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
     "inputs": [],
     "name": "name",
     "outputs": [
@@ -1580,70 +940,6 @@ export const contractAbi =  [
         "internalType": "string",
         "name": "",
         "type": "string"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "name": "offsetProposals",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "proposalId",
-        "type": "uint256"
-      },
-      {
-        "internalType": "string",
-        "name": "category",
-        "type": "string"
-      },
-      {
-        "internalType": "string",
-        "name": "description",
-        "type": "string"
-      },
-      {
-        "internalType": "uint256",
-        "name": "estAmount",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "timestamp",
-        "type": "uint256"
-      },
-      {
-        "internalType": "string",
-        "name": "ipfsHash",
-        "type": "string"
-      },
-      {
-        "internalType": "address",
-        "name": "offsetterAdd",
-        "type": "address"
-      },
-      {
-        "internalType": "uint256",
-        "name": "yesVotes",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "noVotes",
-        "type": "uint256"
-      },
-      {
-        "internalType": "bool",
-        "name": "approved",
-        "type": "bool"
       }
     ],
     "stateMutability": "view",
@@ -1681,11 +977,6 @@ export const contractAbi =  [
       },
       {
         "internalType": "string",
-        "name": "offSetCat",
-        "type": "string"
-      },
-      {
-        "internalType": "string",
         "name": "description",
         "type": "string"
       },
@@ -1693,16 +984,6 @@ export const contractAbi =  [
         "internalType": "address",
         "name": "offsetterAdd",
         "type": "address"
-      },
-      {
-        "internalType": "string",
-        "name": "email",
-        "type": "string"
-      },
-      {
-        "internalType": "uint256",
-        "name": "phoneNo",
-        "type": "uint256"
       }
     ],
     "stateMutability": "view",
@@ -1742,16 +1023,6 @@ export const contractAbi =  [
         "internalType": "string",
         "name": "_description",
         "type": "string"
-      },
-      {
-        "internalType": "string",
-        "name": "_email",
-        "type": "string"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_phoneNo",
-        "type": "uint256"
       }
     ],
     "name": "registerBuyer",
@@ -1778,23 +1049,8 @@ export const contractAbi =  [
       },
       {
         "internalType": "string",
-        "name": "_offSetCat",
-        "type": "string"
-      },
-      {
-        "internalType": "string",
         "name": "_description",
         "type": "string"
-      },
-      {
-        "internalType": "string",
-        "name": "_email",
-        "type": "string"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_phoneNo",
-        "type": "uint256"
       }
     ],
     "name": "registerOffsetter",
@@ -1988,45 +1244,6 @@ export const contractAbi =  [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "_proposalId",
-        "type": "uint256"
-      }
-    ],
-    "name": "voteNo",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "_proposalId",
-        "type": "uint256"
-      }
-    ],
-    "name": "voteYes",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "_address",
-        "type": "address"
-      }
-    ],
-    "name": "withdraw",
-    "outputs": [],
-    "stateMutability": "payable",
     "type": "function"
   }
 ];

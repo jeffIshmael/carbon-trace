@@ -1,8 +1,7 @@
-### Zenzone Ledger
+### Carbon Trace
 
-Zenzone is a blockchain project built on the Celo platform, aiming to ensure transparency in the carbon credits market. Our platform allows buyers and offsetters to register, enabling buyers to purchase carbon credits directly. Offsetters can submit their projects for validation, and upon approval, they receive funding for their initiatives to offset carbon emissions.
-![alt text](<Screenshot from 2024-06-29 08-39-19.png>)
-![alt text](<Screenshot from 2024-06-29 08-40-19.png>)
+CarbonTrace is a blockchain project built on the hedera testnet, aiming to ensure transparency in the carbon credits market. Our platform allows buyers and offsetters to register, enabling buyers to purchase carbon credits directly. Offsetters can submit their projects for validation, and upon approval, they receive funding for their initiatives to offset carbon emissions.
+![homepage](<Screenshot from 2025-01-14 17-39-36.png>)
 
 ## Table of Contents
 
@@ -11,12 +10,13 @@ Zenzone is a blockchain project built on the Celo platform, aiming to ensure tra
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Contributing](#contributing)
+- [Additional Info](#Additional-Info)
 - [License](#license)
 - [Contact](#contact)
 
 ## Introduction
 
-With growing concerns over climate change, there is an urgent need for transparent and efficient carbon credit markets. Zenzone leverages blockchain technology to provide a trustworthy platform where carbon credits can be bought and sold with complete transparency. Our platform ensures that every transaction is securely recorded on the blockchain, providing an immutable record that can be trusted by all participants.
+With growing concerns over climate change, there is an urgent need for transparent and efficient carbon credit markets. CarbonTrace leverages blockchain technology to provide a trustworthy platform where carbon credits can be bought and sold with complete transparency. Our platform ensures that every transaction is securely recorded on the blockchain, providing an immutable record that can be trusted by all participants.
 
 ## Features
 
@@ -29,8 +29,6 @@ With growing concerns over climate change, there is an urgent need for transpare
 ### Interacting with the Platform
 
 1. **Register as a Buyer or Offsetter:** Sign up on the platform to start participating in the carbon credit market.
-![alt text](<Screenshot from 2024-06-29 08-45-22.png>)
-![alt text](<Screenshot from 2024-06-29 08-45-49.png>)
 2. **Buy Carbon Credits:** Buyers can purchase carbon credits directly through the platform.
 3. **Submit Offset Projects:** Offsetters can submit their projects detailing how they plan to offset carbon emissions.
 4. **Project Validation:** Validators review and approve credible projects.
@@ -38,7 +36,7 @@ With growing concerns over climate change, there is an urgent need for transpare
 
 ## Contributing
 
-We welcome contributions from the community. To contribute to Zenzone, follow these steps:
+We welcome contributions from the community. To contribute to CarbonTrace, follow these steps:
 
 1. Fork the repository.
 2. Create a new branch for your feature or bugfix.
@@ -47,14 +45,25 @@ We welcome contributions from the community. To contribute to Zenzone, follow th
 
 Please make sure your code adheres to our coding standards and includes appropriate tests.
 
+## Additional info
+- The project is an improvement from an existing project that ws built on the celo blockchain.
+- The folloeing are some of the added info:-
+    * change of network from celo to hedera.
+
+
+## Demonstration
+
+- Watch our video demo [Live Demo](https://www.loom.com/share/429860d9aa9d40ae94daeef128b93b72?sid=eb25f71a-e696-4f61-80af-5ee773b60682)
+- Try out our platform in our [live link](https://carbon-traceapp.vercel.app/)
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ## Contact
 
-For any questions or inquiries, please contact us at [jeff@zenzone.com](mailto:jeffishmael141@gmail.com).
+For any questions or inquiries, please contact us at [carbontrace@dev.com](mailto:jeffishmael141@gmail.com).
 
 ---
 
-By using Zenzone, you are contributing to a more transparent and efficient carbon credit market, helping to fight climate change and support sustainable development. Thank you for being a part of our journey!
+By using CarbonTrace, you are contributing to a more transparent and efficient carbon credit market, helping to fight climate change and support sustainable development. Thank you for being a part of our journey!

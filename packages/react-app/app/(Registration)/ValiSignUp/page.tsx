@@ -37,7 +37,12 @@ const ValiSignUp = () => {
       });
       if (hash) {
         console.log(hash);
-        toast("Registration Successful");
+        toast.success("Registration Successful. Go to the dashboard.",{
+          action: {
+            label: "Go",
+            onClick: () => router.push("/Dashboard"),
+          }
+        });
         router.push("/");
       }
     } catch (error) {

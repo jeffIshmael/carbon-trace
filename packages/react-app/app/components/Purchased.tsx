@@ -27,6 +27,8 @@ const Purchased = () => {
     regPin: number;
   }
   const result = (data as Result) || {};
+  console.log(result.carbonIds);
+  // console.log(data.carbonIds);
 
   const { data: carbons } = useReadContract({
     address: contractAddress,

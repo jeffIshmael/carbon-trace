@@ -36,13 +36,16 @@ const SignUp = () => {
           data.regpin !== undefined ? BigInt(Number(data.regpin)) : BigInt(0),
           data.category as string,
           data.description as string,
-          data.email as string,
-          data.phone !== undefined ? BigInt(Number(data.phone)) : BigInt(0),
         ],
       });
       if (hash) {
         console.log(hash);
-        toast("Registration Successful");
+        toast.success("Registration Successful. Go to the dashboard.",{
+          action: {
+            label: "Go",
+            onClick: () => router.push("/Dashboard"),
+          }
+        });
         router.push("/");
       }
     } catch (error) {
@@ -241,8 +244,8 @@ const SignUp = () => {
                 <button
                   type="submit"
                   disabled={isPending}
-                  className={`inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500 ${
-                    isPending ? "opacity-50 cursor-not-allowed" : ""
+                  className={`inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition  hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500 ${
+                    isPending ? "opacity-50 cursor-not-allowed" : "hover:bg-transparent"
                   }`}
                 >
                   {isPending ? (

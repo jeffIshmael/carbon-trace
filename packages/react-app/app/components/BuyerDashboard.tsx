@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import Purchased from "./Purchased";
 import { toast } from "sonner";
 import { ethers } from "ethers";
+import erc20 from "../Blockchain/erc20.json"
 import Offsetters from "./Offsetters";
 import { processCheckout } from "../Blockchain/TokenFunction";
 
@@ -72,6 +73,14 @@ const BuyerDashboard = () => {
     args: [address],
   });
 
+  const { data: hbarBalance } = useReadContract({
+    address: "0x0000000000000000000000000000000000342855",
+    abi: erc20,
+    functionName: "balanceOf",
+    args: [address],
+  });
+ console.log(`hbarBalance: ${hbarBalance}`);
+
   useEffect(() => {
     if (credits) {
       console.log("we are live");
@@ -106,25 +115,19 @@ const BuyerDashboard = () => {
 
     console.log(Amount);
     try {
-      const paid = await processCheckout(Amount * 0.01);
+      const hash = await writeContractAsync({
+        address: contractAddress,
+        abi: contractAbi,
+        functionName: "getCarbz",
+        args: [Amount],
+      });
 
-      if (paid) {
-        const hash = await writeContractAsync({
-          address: contractAddress,
-          abi: contractAbi,
-          functionName: "getCarbz",
-          args: [Amount],
-        });
-
-        if (hash) {
-          console.log(hash);
-          setIsFormVisible(false);
-        } else {
-          console.log(error);
-          toast.error("failed to buy.");
-        }
+      if (hash) {
+        console.log(hash);
+        setIsFormVisible(false);
       } else {
-        toast.error("unable to make payment.");
+        console.log(error);
+        toast.error("failed to buy.");
       }
     } catch (err) {
       toast.error("Failed.Ensure you have sufficient balance.");
@@ -153,7 +156,7 @@ const BuyerDashboard = () => {
       if (hash) {
         console.log(hash);
         setIsPurchaseVisible(false);
-        
+        handleButtonClick("CarbonCreds");
       } else {
         console.log("An error occurred while creating your account.");
       }
@@ -492,7 +495,8 @@ const BuyerDashboard = () => {
 
           <span className="mt-4 text-gray-600">Balance</span>
           <span className="mt-1 text-3xl font-semibold">
-            {Number(balance) / 10 ** 18} CARBZ          </span>
+            {Number(balance) / 10 ** 18} CARBZ{" "}
+          </span>
 
           <button
             onClick={toggleFormVisibility}
@@ -530,10 +534,12 @@ const BuyerDashboard = () => {
                   </svg>
                 </button>
                 <div className="flex flex-col gap-1">
-                  <h2 className="text-lg font-bold text-black">Purchase CARBZ</h2>
+                  <h2 className="text-lg font-bold text-black">
+                    Purchase CARBZ
+                  </h2>
                   <small>
                     <span className="font-italic">NB:</span> Price of 1 CARBZ is
-                    equal to 0.01 cUSD
+                    equal to 10 HBAR
                   </small>
                   <div className="flex space-x-1">
                     <form onSubmit={handleTokenSubmit}>
